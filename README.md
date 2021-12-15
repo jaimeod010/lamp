@@ -9,9 +9,9 @@
 
 # GoAcess
 
-# balanceo apache
+# balanceo apache/ngninx
 
-# balanceo ngninx
+
 
 # mysql maestro esclavo
 
