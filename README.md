@@ -1,13 +1,11 @@
-# lamp
+# Indice:
+
+# 1.- [Lamp](https://github.com/jaimeod010/servidor-de-aplicaciones/tree/main/lamp)
+![lamp](https://github.com/jaimeod010/servidor-de-aplicaciones/blob/main/IMAGENES/lamp.jpg)
+
+# 2.- [balanceo apache/ngninx](https://github.com/jaimeod010/servidor-de-aplicaciones/blob/main/balanceo-apache-nginx.md)
 
 
 
-# balanceo apache/ngninx
+# 3.- [ mysql maestro esclavo]
 
-
-
-# mysql maestro esclavo
-
-# tomcat
-
-# https
