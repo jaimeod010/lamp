@@ -68,5 +68,22 @@ mysql> show grants for replica@192.168.1.111;
 service mysql status
 
 ```
+## Añadimos estas lineas al archivo de configuracion de mysql
 
+```
+nano /etc/mysql/mysql.conf.d/mysqld.cnf
+```
+
+```
+default_authentication_plugin=mysql_native_password
+log_bin = /var/log/mysql/mysql-bin.log
+server-id = 2
+read_only = 1
+tmpdir = /tmp
+binlog_format = ROW
+max_binlog_size = 500M
+sync_binlog = 1
+expire-logs-days = 7
+slow_query_log = 1
+```
 
