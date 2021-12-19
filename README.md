@@ -7,5 +7,4 @@
 
 
 
-# 3.- [ mysql maestro esclavo]
-
+# 3.- [Mysql-esclavo-maestro](https://github.com/jaimeod010/servidor-de-aplicaciones/blob/main/mysql-maestro-esclavo.md)
