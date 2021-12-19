@@ -57,4 +57,16 @@ mysql> grant replication slave on *.* to replica@192.168.1.111;
 mysql> flush privileges;
 
 mysql> show grants for replica@192.168.1.111;
+```
+
 ![mysqlserver](https://github.com/jaimeod010/servidor-de-aplicaciones/blob/main/imagenes/mysqlserver.png)
+
+# Esclavo
+## Instalamos mysql
+
+```apt-get update && sudo apt-get install mysql-client mysql-server
+service mysql status
+
+```
+
+
