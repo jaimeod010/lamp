@@ -10,7 +10,7 @@
 -goacces
 ### La contraseña es Gatitos.21 y el directorio es usuario, se puede modificar el script para que tenga otra contraseña/ directorio
 
-´´´
+```
 #!/bin/bash
 
 
@@ -107,4 +107,4 @@ htpasswd -c -b $HTTPASSWD_DIR/.htpasswd $HTTPASSWD_USER $HTTPASSWD_PASSWD
 
 systemctl restart apache2
 
-´´´
+```
