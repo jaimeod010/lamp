@@ -48,6 +48,7 @@ systemctl restart mysql
 mysql -u root -p
 ```
 ## Ahora ponemos la informacion del cliente
+```
 la ip de la maquina servidora es 192.168.2.88
 
 mysql> create user replica@192.168.1.111 identified with mysql_native_password by 'Pass@123';
@@ -116,5 +117,8 @@ mysql> START SLAVE;
 ```
 
 ## 4.- Comprobamos el estado del esclavo
+```
+SHOW SLAVE STATUS\G
+```
 
 ![esclavo](https://github.com/jaimeod010/servidor-de-aplicaciones/blob/main/IMAGENES/ESCLAVOMYSQL.png)
