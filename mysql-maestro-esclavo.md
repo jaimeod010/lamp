@@ -49,15 +49,15 @@ mysql -u root -p
 ```
 ## Ahora ponemos la informacion del cliente
 ```
-la ip de la maquina servidora es 192.168.2.88
+la ip de la maquina servidora es 192.168.2.173
 
 mysql> create user replica@192.168.1.111 identified with mysql_native_password by 'Pass@123';
 
-mysql> grant replication slave on *.* to replica@192.168.2.88;
+mysql> grant replication slave on *.* to replica@192.168.2.173;
 
 mysql> flush privileges;
 
-mysql> show grants for replica@192.168.2.88;
+mysql> show grants for replica@192.168.2.173;
 ```
 ```
 ![mysqlserver](https://github.com/jaimeod010/servidor-de-aplicaciones/blob/main/IMAGENES/MASTERMYSQL.png)
