@@ -1,1 +1,10 @@
+# servidor
 
+### se debe tener permisos root
+
+## Instalamos mysql y lo iniciamos
+´´´
+apt install mysql-server -y
+systemctl start mysql
+systemctl enable mysql
+´´´
