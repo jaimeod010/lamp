@@ -48,18 +48,18 @@ systemctl restart mysql
 mysql -u root -p
 ```
 ## Ahora ponemos la informacion del cliente
-la ip de la maquina servidora es 192.168.1.111
+la ip de la maquina servidora es 192.168.2.88
 
 mysql> create user replica@192.168.1.111 identified with mysql_native_password by 'Pass@123';
 
-mysql> grant replication slave on *.* to replica@192.168.1.111;
+mysql> grant replication slave on *.* to replica@192.168.2.88;
 
 mysql> flush privileges;
 
-mysql> show grants for replica@192.168.1.111;
+mysql> show grants for replica@192.168.2.88;
 ```
 
-![mysqlserver](https://github.com/jaimeod010/servidor-de-aplicaciones/blob/main/imagenes/mysqlserver.png)
+![mysqlserver](https://github.com/jaimeod010/servidor-de-aplicaciones/blob/main/IMAGENES/MASTERMYSQL.png)
 
 # Esclavo
 ## Instalamos mysql
@@ -105,6 +105,16 @@ mysql> STOP SLAVE;
 ```
 ## 2.- Ponemos los datos del servidor
 ```
-mysql> CHANGE MASTER TO MASTER_HOST='192.168.1.111', MASTER_USER='replica', MASTER_PASSWORD='Pass@123', MASTER_LOG_FILE='mysql-bin.000003', MASTER_LOG_POS=1050;
+mysql> CHANGE MASTER TO MASTER_HOST='192.168.2.173', MASTER_USER='replica', MASTER_PASSWORD='Pass@123', MASTER_LOG_FILE='mysql-bin.000003', MASTER_LOG_POS=1050;
 ```
 
+## 3.- Iniciamos el servicio
+
+```
+mysql> START SLAVE;
+
+```
+
+## 4.- Comprobamos el estado del esclavo
+
+![esclavo](https://github.com/jaimeod010/servidor-de-aplicaciones/blob/main/IMAGENES/ESCLAVOMYSQL.png)
