@@ -59,7 +59,7 @@ mysql> flush privileges;
 
 mysql> show grants for replica@192.168.2.88;
 ```
-
+```
 ![mysqlserver](https://github.com/jaimeod010/servidor-de-aplicaciones/blob/main/IMAGENES/MASTERMYSQL.png)
 
 # Esclavo
