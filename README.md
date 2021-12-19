@@ -2,13 +2,6 @@
 
 
 
-# Adminer
-
-# bookmedik
-
-
-# GoAcess
-
 # balanceo apache/ngninx
 
 
