@@ -87,3 +87,24 @@ expire-logs-days = 7
 slow_query_log = 1
 ```
 
+## Ahora reiniciamos el servicio
+
+```
+ systemctl restart mysql
+```
+
+## Entramos a mysql 
+```
+mysql -u root -p
+```
+## 1.- Paramos el servicio
+
+```
+mysql> STOP SLAVE;
+
+```
+## 2.- Ponemos los datos del servidor
+```
+mysql> CHANGE MASTER TO MASTER_HOST='192.168.1.111', MASTER_USER='replica', MASTER_PASSWORD='Pass@123', MASTER_LOG_FILE='mysql-bin.000003', MASTER_LOG_POS=1050;
+```
+
