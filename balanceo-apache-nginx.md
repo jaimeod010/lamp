@@ -7,9 +7,11 @@
 a2enmod dav_fs
 a2enmod dav
 ```
+## modificar archivo 000-default.conf
 
-
-
+```
+nano /etc/apache2/sites
+```
 
 
 
