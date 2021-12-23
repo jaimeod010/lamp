@@ -10,3 +10,5 @@
 ### 3.- [Mysql-esclavo-maestro](https://github.com/jaimeod010/servidor-de-aplicaciones/blob/main/mysql-maestro-esclavo.md)
 
 ### 4.- [tomcat](https://github.com/jaimeod010/servidor-de-aplicaciones/blob/main/tomcat.md)
+
+### 5.- [https](https://github.com/jaimeod010/servidor-de-aplicaciones/blob/main/https.md)
